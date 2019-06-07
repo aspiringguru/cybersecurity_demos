@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <canvas id="qr"></canvas>
+    <br>
+    <canvas id="qr2"></canvas>
+
+    <script src="qrious.js"></script>
+    <script>
+      (function() {
+        var qr = new QRious({
+          element: document.getElementById('qr'),
+          size: 250,
+          value: 'https://github.com/neocotic/qrious'
+        });
+        var qr2 = new QRious({
+          element: document.getElementById('qr2'),
+          background: 'white',
+          backgroundAlpha: 0.8,
+          foreground: 'black',
+          foregroundAlpha: 0.8,
+          level: 'H',
+          padding: 25,
+          size: 250,
+          value: 'https://facebook'
+        });
+      })();
+    </script>
+    <br>
+    read with QR code app, not authy apps.
+  </body>
+</html>

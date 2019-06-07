@@ -1,0 +1,24 @@
+
+https://github.com/pyauth/pyotp
+https://github.com/neocotic/qrious
+npm init
+npm install --save qrious
+
+npx --version
+npx serve
+
+https://www.npmjs.com/package/http-server
+npm install http-server -g
+http-server
+http-server -p 80
+#could not get this above to run
+#use npx
+npx http-server
+
+
+#unix
+which npm
+which node
+#windows
+where npm
+where node
