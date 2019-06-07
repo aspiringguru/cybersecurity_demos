@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% block title %}Heroku Python TOTP Demo{% endblock %}
+{% block pagetitle %}Create a New User{% endblock %}
+{% block content %}
+  <div class="row">
+      <div class="col-md-12">
+  <form class="form" role="form" method="post">
+  <div class="form-group">
+    <label class="" for="input-email">Username</label>
+    <input type="text" name="email" class="form-control" id="input-email" placeholder="Enter username">
+  </div>
+          <a href="/" class="btn btn-default">Back</a>
+  <button type="submit" class="btn btn-primary" style="width: 300px;">Sign up</button>
+      </div>
+      </div>
+    </form>
+{% endblock %}

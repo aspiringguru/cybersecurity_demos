@@ -49,8 +49,8 @@ pyotp.totp.TOTP('JBSWY3DPEHPK3PXP').provisioning_uri("sleepyhollowinoz@gmail.com
 temp = pyotp.hotp.HOTP('JBSWY3DPEHPK3PXP').provisioning_uri("sleepyhollowinoz@gmail.com", initial_count=0, issuer_name="bmtTest")
 
 
-import pyotp
 import qrcode
+import pyotp
 mykey = 'JBSWY3DPEHPK3PXP'
 temp = pyotp.hotp.HOTP(mykey).provisioning_uri("sleepyhollowinoz@gmail.com", issuer_name="bmtTest")
 img = qrcode.make(temp)
@@ -60,3 +60,26 @@ totp = pyotp.TOTP(mykey)
 print("Current OTP:", totp.now())
 
 #https://github.com/neocotic/qrious
+
+import datetime
+datetime.datetime.now()
+
+import numpy as np
+str(np.datetime64('now'))
+str(np.datetime64('today'))
+
+import pandas as pd
+str(pd.to_datetime('now'))
+str(pd.to_datetime('today'))  #returns local timezone time
+
+from time import gmtime, strftime
+print(strftime("%z", gmtime()))
+
+import time
+time.tzname
+
+import datetime
+tz_string = datetime.datetime.now(datetime.timezone.utc).astimezone().tzname()
+tz_string
+
+time.timezone / -(60*60)

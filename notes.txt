@@ -1,5 +1,6 @@
 
 https://github.com/pyauth/pyotp
+pyotp github repo since 2011
 https://github.com/neocotic/qrious
 npm init
 npm install --save qrious
@@ -22,3 +23,17 @@ which node
 #windows
 where npm
 where node
+
+
+
+git init
+git add .
+git commit -m "first commit"
+git remote add origin https://github.com/aspiringguru/cybersecurity_demos.git
+git push -u origin master
+
+
+#-------------------------------------------------------------------------------
+https://blog.miguelgrinberg.com/post/two-factor-authentication-with-flask
+https://flaskbook.com/
+https://github.com/miguelgrinberg/flasky
